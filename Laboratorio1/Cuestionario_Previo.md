@@ -32,3 +32,15 @@ Las FPGA trabajan con los siguientes terminos generales:
 - Sínyyesis y Place&Route: Es donde el software traduce la descripción a conexiones físicas y asigna funciones a bloques lógicos e interconexiones.
 - Programación: es la encargada que el bitstream se transfiera a la FPGA, configurando la red de lógica interna.
 Al momento que la FPGA se haya configurado, logra ejecutar las operaciones de  forma concurrente en hardware, sin necesidad de un ciclo de instrucciones como en un procesador tradicional.
+
+La estructura de la FPGA esta conformada por los siguientes componentes:
+- LUTs (Look-Up Tables): es quien se encarga de las pequeñas tablas de verdad programables que implementan funciones lógicas combinacionales.
+- Flip-Flops / Registros: es quien se encarga de los elementos secuenciales para almacenar bits y sincronizar señales con un reloj.
+- CLBs (Configurable Logic Blocks): es quien se encarga de los bloques que agrupan LUTs, flip-flops y lógica adicional, estos constituyen las unidades básicas de procesamiento del FPGA.
+- Matriz de interconexión programable: es quien se encarga de la red de enrutamiento que conecta CLBs, memorias y otros bloques de forma configurable.
+- Bloques de memoria (Block RAM): es quien se encarga dela memoria interna de alta velocidad para almacenar datos intermedios o buffers.
+- DSP slices: es quien se encarga de las unidades especializadas para operaciones matemáticas de alto rendimiento, ya sean los multiplicadores, sumadores, MAC.
+- I/O Blocks (IOBs): es quien se encarga de las interfaces configurables para comunicar el FPGA con el mundo exterior, soportando diferentes estándares de señal.
+- PLL/MMCM: es quien se encarga de los módulos para gestión de relojes y generación de frecuencias.
+
+Por estas razones las FPGA son la tecnología que constituye una gran versatilidad si no que también combina la la flexibilidad del software con la velocidad del hardware, haciendo así que su arquitectura modular y reconfigurable sean ideales para adaptarse a las diferentes aplicaciones, como lo pueden ser procesos digitales, comunicaciones, visión por computadora, control de sistemas y prototipado de ASICs.
