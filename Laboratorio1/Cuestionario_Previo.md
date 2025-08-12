@@ -15,6 +15,16 @@ Por lo cual podemos ver que ambos diseños o ambos modelados van de la mano con 
 
  ### 2. Explique el proceso de síntesis lógica en el diseño de circuitos digitales, tanto para el desarrollo de un ASIC como para una FPGA.
  #### Respuesta:
+La síntesis lógica es el proceso de convertir una descripción de un circuito digital en un lenguaje de descripción de hardware (RTL, como VHDL o Verilog) en una lista de conexiones lógicas (**netlist**) optimizada. Este proceso prepara el diseño para la implementación física, pero la forma en que lo hace difiere significativamente entre ASICs y FPGAs.
+
+### **Síntesis para ASICs**
+
+En el diseño de un **Circuito Integrado para Aplicaciones Específicas (ASIC)**, la síntesis mapea el diseño a una **librería de celdas estándar** fijas. Estas celdas son bloques lógicos básicos (como compuertas y flip-flops) diseñados para una tecnología de fabricación específica. La síntesis optimiza el circuito para minimizar el área, el consumo de energía y el retardo, generando un netlist que luego se utiliza en la etapa de diseño físico (*place and route*) para crear el chip de silicio. El resultado es un chip permanente y no reprogramable.
+
+### **Síntesis para FPGAs**
+
+Para un **Dispositivo Lógico Programable en Campo (FPGA)**, la síntesis mapea el diseño a los recursos fijos del chip, como las **tablas de búsqueda (LUTs)**, los **flip-flops** y otros bloques programables. A diferencia de los ASICs, el hardware físico ya existe. La síntesis genera una *netlist* que describe cómo deben configurarse estos recursos. Finalmente, esta *netlist* se utiliza para crear un archivo de **bitstream**, que es la configuración que se carga en la FPGA para programar su funcionamiento. La principal ventaja es que este proceso es reprogramable, lo que permite modificar el circuito después de su fabricación.
+ 
  ### 3. Investigue sobre la tecnología de FPGAs. Describa el funcionamiento de la lógica programable en general, así como los componentes básicos de un chip de FPGAs.
  #### Respuesta:
 La tecnología de FPGA, la cual sus siglas en ingles significan Field-Programmable Gate Array o en español Matrix de Puertas Programables en Campo, es un dispositivo de lógica programable que permite implementar circuitos digitales personalizados, estos cuentan con las caracteristicas de:
