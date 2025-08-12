@@ -17,3 +17,18 @@ Por lo cual podemos ver que ambos diseños o ambos modelados van de la mano con 
  #### Respuesta:
  ### 3. Investigue sobre la tecnología de FPGAs. Describa el funcionamiento de la lógica programable en general, así como los componentes básicos de un chip de FPGAs.
  #### Respuesta:
+La tecnología de FPGA, la cual sus siglas en ingles significan Field-Programmable Gate Array o en español Matrix de Puertas Programables en Campo, es un dispositivo de lógica programable que permite implementar circuitos digitales personalizados, estos cuentan con las caracteristicas de:
+- Flexible
+- Reconfigurable
+- No requiere la fabricación de un chip específico
+Para poderlo entender de la mejor manera, se relizara la comparación de microcontroladores o procesadores vs FPGA:
+- Los microcontroladores o procesadores suelen ejecutar instrucciones de un software.
+- Las FPGA se configuran físicamente su hardware interno, con el fin de realizar una función lógica concreta, lo que se traduce en un alto paralelismo y baja latencia.
+
+Es imporntante aclarar que la lógica programable se basa en matrices de bloques lógicos y rutas de interconexión, las cuales pueden ser configuradas por el usuario para realizar operaciones lógicas y aritméticas en específico. En el caso de la FPGA, esta configuración se realiza cargando un bitstream, a lo que se refiere a cargar un archivo binario generado por herramientas de síntesis, en su memoria de configuración.
+
+Las FPGA trabajan con los siguientes terminos generales:
+- Diseño: el cual el usuario se encarga de describir el comportamiento del circuito. 
+- Sínyyesis y Place&Route: Es donde el software traduce la descripción a conexiones físicas y asigna funciones a bloques lógicos e interconexiones.
+- Programación: es la encargada que el bitstream se transfiera a la FPGA, configurando la red de lógica interna.
+Al momento que la FPGA se haya configurado, logra ejecutar las operaciones de  forma concurrente en hardware, sin necesidad de un ciclo de instrucciones como en un procesador tradicional.
