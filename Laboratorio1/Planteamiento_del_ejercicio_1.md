@@ -1,11 +1,11 @@
-### 3.1. Ejercicio 1. Switches, botones y LEDs
+# 3.1. Ejercicio 1. Switches, botones y LEDs
  1. Diseñe un módulo que reciba como entradas las señales producidas por los 16 interruptores disponibles en la tarjeta con FPGA que se utilizará en el curso.
  2. Las salidas del módulo se mostrarán en los 16 LEDs disponibles en la tarjeta de desarrollo.
  3. El bloque a desarrollar debe subdividir los 16 interruptores en 4 grupos de 4. Lo mismo aplica para los LEDs. Cada grupo de 4 interruptores estará gobernado por un botón (push button) diferente en la tarjeta. De esta manera, al presionar un botón, el grupo de LEDs correspondiente se mantendrá apagado sin importar la combinación de interruptores del grupo asignado (los otros grupos no deben ser afectados).
  4. Implemente un banco de pruebas (testbench) para validar el funcionamiento de su diseño. Realice su validación a nivel post-síntesis.
  5. Realice una validación de su diseño en la tarjeta con FPGA.
 
-# Objetivo a realizar.
+## Objetivo a realizar.
 Diseñar e implementar un módulo digital utilizando una tarje FPGA: Nexys 4, que permita controlar 16 LEDs mediante 16 interruptores, teniendo en cuenta el bloqueo de ciertos grupos de led de acuerdo a las especificaciones dadas.
 
 ## Planteamiento de la solución. 
