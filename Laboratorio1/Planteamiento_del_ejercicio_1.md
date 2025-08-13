@@ -20,19 +20,19 @@ Por lo que podemos establecer 4 grupos de 16 ledes controlados bajo un solo bot�
 El módulo es establecera como un receptor donde recibe la señal de 16 interruptores para apagar y encender los ledes correspondientes a este interruptor. De manera que a través de la luz del led podamos verificar el estado de lso interruptores en sus 16 ledes correspondientes.
 Al mismo tiempo se debe de establecer 4 grupos de ledes con sus 4 interruptores de manera que podemos seguir utilizando la nomeclatura del la hoja de datos de la tarjeta. 
 
-# Subdividir los 16 interruptores en 4 grupos de 4:
+### Subdividir los 16 interruptores en 4 grupos de 4:
 Grupo 1 será interruptores de SW0 a SW3
 Grupo 2 será interruptores de SW4 a SW7
 Grupo 3 será interruptores de SW8 a SW11
 Grupo 4 será interruptores de SW12 a SW15
 
-# Subdividir los 16 LEDs en los mismos 4 grupos de 4 LEDs, correspondientes a cada grupo de interruptores.
+### Subdividir los 16 LEDs en los mismos 4 grupos de 4 LEDs, correspondientes a cada grupo de interruptores.
 Entonces tenemos 4 grupos de 4 interruptores con 4 ledes cada uno, cada grupo será controlado por un boton especifico del BTN0 al BTN3, si se presiona un boton este grupo de leds se mantiene apagando sin importar en que posición este los interruptores de este grupo. Mientras los otros sets de ledes seguiran su comportamiento normal regido por sus interruptores y sus botones cabeceros no activos. 
 De esto con cada grupo establecido teniendo en jeraquía principal el boton, seguido por el interruptor y esto reflejado en el boton. 
 
-# Diagrama de solución del problema.
+### Diagrama de solución del problema.
 
-# Tablas de la verdad para cada caso 
+### Tablas de la verdad para cada caso 
 Podemos expresar la solución por medio de la lógica de compuertas lógicas para determinar como se puede comportar los leds. Así también establecer las tablas de verdad para cada caso. 
 Cada LED puede expresarse con la fórmula lógica:
                                     𝐿𝐸𝐷 (Número) =(interrupotor del led)⋅~(boton del grupo).
