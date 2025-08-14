@@ -44,5 +44,22 @@
 
  # Tabla de funcionamiento de las operaciones de la ALU.
  Como estamos trabajando con 13 operaciones se emplea el hexadecimal para estos valores y facilitar la implementación.
- Código (hex)
+# Tabla de decodificación de operaciones ALU
+
+| Código (hex) | Operación | Expresión base |
+|---|---|---|
+| 0h | AND | Y = A & B; C = 0 |
+| 1h | OR  | Y = A | B; C = 0 |
+| 2h | NOT (unario) | Y = ~OpSel; C = 0 |
+| 3h | SUMA | Y = A + B + ALUFlagIn; C = carry_out |
+| 4h | RESTA | Y = A - B + ALUFlagIn; C = carry_out* |
+| 5h | INC | Y = OpSel + 1; C = carry_out |
+| 6h | DEC | Y = OpSel - 1; C = borrow* |
+| 7h | XOR | Y = A ^ B; C = 0 |
+| 8h | SHIFT-L lógico | Y = A << k (k = B); relleno = ALUFlagIn; C = último bit expulsado |
+| 9h | SHIFT-R lógico | Y = A >> k; relleno = ALUFlagIn; C = último bit expulsado |
+| Ah | SHIFT-ARITH-L | igual a lógico-izq. para sin signo; C = último bit expulsado |
+| Bh | MAX | Y = max(A,B) (sin signo); C = 0 |
+| Ch | MIN | Y = min(A,B) (sin signo); C = 0 |
+
 
