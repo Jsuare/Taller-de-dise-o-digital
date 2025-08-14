@@ -42,6 +42,8 @@
  La idea es diseñar una ALU parametrizable de n bits que reciba A, B, un bus de control ALUControl (4 bits, códigos 0h–Ch) y una bandera ALUFlagIn. 
  Debe producir el resultado Y[n-1:0] de acuerdo a la parametrización establecida en el inicio y las banderas C de acarreo y Z resultado cero. La ALU debe implementar 13 operaciones: AND, OR, NOT (unario), SUMA, RESTA, INC, DEC, XOR, SHIFT-L, SHIFT-R, SHIFT-ARITH-L, MAX, MIN. Por lo cuál debemos de tener presente que los multiplexores deben de poder trabajar con esa cantidad de operaciones. 
 
+ ![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/alu.png)
+
  # Tabla de funcionamiento de las operaciones de la ALU.
  Como estamos trabajando con 13 operaciones se emplea el hexadecimal para estos valores y facilitar la implementación.
 # Tabla de decodificación de operaciones ALU
