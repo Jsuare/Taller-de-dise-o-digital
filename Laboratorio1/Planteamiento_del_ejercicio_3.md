@@ -46,7 +46,3 @@ Tmabién se debe de tomar en cuenta el an[3:0] (anodos/cátodos de los 4 dígito
 | E             | 1110            | 1001111                     | 
 | F             | 1111            | 1000111                     | 
 
-
-
-
-Deado: si solo hay 1 dígito físico y quieres cambiar el nibbo necesitas refresh rápido; si hay 4 dígitos físicos y quieres mostrar simultáneamente los 4 nibbles, sí necesitas multiplexado con scanning rápido. El enunciado sugiere seleccionar cuál de las 4 entradas se mostrará mediante btn1-2 — interpretaré que un único display muestra el nibble seleccionado, o alternativamente si hay 4 displays podemos mostrar cada uno. Voy a cubrir la opción más robusta: un display físico, selección por botones, y multiplexado por si hay 4 dígitos (se explica cómo adaptarlo).
