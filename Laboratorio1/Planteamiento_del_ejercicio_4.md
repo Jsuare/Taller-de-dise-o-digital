@@ -24,7 +24,7 @@ Suma = A ⊕ B ⊕ C<sub>in</sub>
 ```
 El modelado estructural del 1-bit full adder:
 
-![image](https://github.com/Jsuare/Taller-de-diseno-digital/blob/b8d0a6445d96f669e9b6891b9e9b9d3c24869e79/Laboratorio1/Imagenes%20para%20el%20planteamiento/image.png)
+![image](https://github.com/Jsuare/Taller-de-diseno-digital/blob/d2aadbd094e578079cb43d001a9c68b67ab62ae5/Laboratorio1/Imagenes%20para%20el%20planteamiento/Imagen6.png)
 
 Usando el diseño anterior, podemos crear un ripple carry adder que se vea de la siguiente forma.
 
