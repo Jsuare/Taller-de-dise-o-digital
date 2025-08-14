@@ -13,10 +13,10 @@
  curso.
 # Objetivo 
 Implementar y validar un decodificador de 7 segmentos para mostrar valores hexadecimales a partir de 4 bits, con selección de entre cuatro grupos de switches usando botones en la placa Nexys 4.
-![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/3.png)
+
 # Planteamiento de la solución
 Diseñar un decodificador 4→7 para display de 7 segmentos que muestre valores hexadecimales (0..F). Donde por medio de los 16 interruptores del la tarjeta Nexy 4 organizarmos en 4 grupos de 4 (cada grupo = un nibble) y, usando 2 botones, seleccionar cuál de las 4 entradas mostrar en el display mediante multiplexado.
-
+![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/3.png)
 ## Entradas:
 Los interruptores de la NExy 4 que esta bajo el nombre sw[15:0] 
 Entonces son 16 interruptores organizados en 4 grupos: sw[3:0], sw[7:4], sw[11:8], sw[15:12])
