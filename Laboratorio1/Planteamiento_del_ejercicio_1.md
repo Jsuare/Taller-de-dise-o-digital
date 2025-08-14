@@ -41,14 +41,12 @@ Es decir: si el botón no está presionado, el LED refleja el interruptor; si el
 
 Tabla de la verdad para el led nuemro 1. 
 
-Interruptor | Botón | Led   | 
+| Interruptor | Botón | LED |
+|-------------|-------|-----|
+| 0           | 0     | 0   |
+| 1           | 0     | 1   |
+| 0           | 1     | 0   |
+| 1           | 1     | 0   |
 
------------------------------
-
-   0        |   0   |   0   |
-   1        |   0   |   1   |
-   0        |   1   |   0   |
-   1        |   1   |   0   |
------------------------------
 
 Está misma lógica se aplica para las demás ledes de los otros 3 grupos del ejercicio. 
