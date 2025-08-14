@@ -31,8 +31,14 @@ Entonces tenemos 4 grupos de 4 interruptores con 4 ledes cada uno, cada grupo se
 De esto con cada grupo establecido teniendo en jeraquía principal el boton, seguido por el interruptor y esto reflejado en el boton. 
 
 ### Diagrama de solución del problema.
+## Diagrama del Bloque 1
 ![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20112808.png)
-
+## Diagrama del Bloque 2
+![Diagrama del Bloque 2](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20112906.png)
+## Diagrama del Bloque 3
+![Diagrama del Bloque 3](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20112944.png)
+## Diagrama del Bloque 4
+![Diagrama del Bloque 4](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20113015.png)
 
 
 
