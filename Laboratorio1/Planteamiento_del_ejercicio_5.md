@@ -62,4 +62,32 @@
 | Bh | MAX | Y = max(A,B) (sin signo); C = 0 |
 | Ch | MIN | Y = min(A,B) (sin signo); C = 0 |
 
+### MUX 2:1 (selección genérica)
+`Y = S ? D1 : D0`
+| S | Y |
+|---|---|
+| 0 | D0 |
+| 1 | D1 |
 
+### Full Adder 1 bit (FA)
+Entradas: A, B, Cin → Salidas: S, Cout
+
+| A | B | Cin | S | Cout |
+|---|---|-----|---|------|
+| 0 | 0 | 0   | 0 | 0    |
+| 0 | 0 | 1   | 1 | 0    |
+| 0 | 1 | 0   | 1 | 0    |
+| 0 | 1 | 1   | 0 | 1    |
+| 1 | 0 | 0   | 1 | 0    |
+| 1 | 0 | 1   | 0 | 1    |
+| 1 | 1 | 0   | 0 | 1    |
+| 1 | 1 | 1   | 1 | 1    |
+
+
+## Unidad de corrimiento — definición de C (bit expulsado)
+
+| Operación | Y  | C  |
+|---|---|---|
+| SHIFT-L (8h) | Desplaza A a izquierda k, rellena con ALUFlagIn | C = A[N-k] si 1 ≤ k ≤ N, si k = 0 ⇒ 0 |
+| SHIFT-R (9h) | Desplaza A a derecha k, rellena con ALUFlagIn | C = A[k-1] si 1 ≤ k ≤ N, si k = 0 ⇒ 0 |
+| SHIFT-ARITH-L (Ah) | Igual a SHIFT-L para sin signo | Igual a SHIFT-L |
