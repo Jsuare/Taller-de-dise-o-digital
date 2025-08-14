@@ -21,13 +21,13 @@ Bus de datos:[WIDTH-1:0]
 
 # Tabla de verdad para el selector.
 
-|Sel [2bits]|Salida[bus width]|
--------------------------------
-|    00     | D0 [bus width]  |
-|    01     | D1 [bus width]  |
-|    10     | D2 [bus width]  |
-|    11     | D3 [bus width]  |     
--------------------------------
+| Sel [2 bits] | Salida [bus width] |
+|--------------|------------------|
+| 00           | D0 [bus width]    |
+| 01           | D1 [bus width]    |
+| 10           | D2 [bus width]    |
+| 11           | D3 [bus width]    |
+
 # Diagrama de bloques para el funcionamiento.
 
 # Aplicación el la tarjeta FPGA Nexy 4
