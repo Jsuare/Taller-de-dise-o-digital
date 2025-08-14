@@ -62,14 +62,14 @@
 | Bh | MAX | Y = max(A,B) (sin signo); C = 0 |
 | Ch | MIN | Y = min(A,B) (sin signo); C = 0 |
 
-### MUX 2:1 (selección genérica)
+### MUX 2:1 
 `Y = S ? D1 : D0`
 | S | Y |
 |---|---|
 | 0 | D0 |
 | 1 | D1 |
 
-### Full Adder 1 bit (FA)
+### Full Adder 1 bit 
 Entradas: A, B, Cin → Salidas: S, Cout
 
 | A | B | Cin | S | Cout |
@@ -84,7 +84,7 @@ Entradas: A, B, Cin → Salidas: S, Cout
 | 1 | 1 | 1   | 1 | 1    |
 
 
-## Unidad de corrimiento — definición de C (bit expulsado)
+## Unidad de corrimiento expulsado
 
 | Operación | Y  | C  |
 |---|---|---|
