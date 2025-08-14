@@ -3,6 +3,6 @@ En este ejercicio se debe de diseñar un sumador y ruta critica, por lo que el d
 de 1 bit, el bloque base para cualquier sumador de múltiples bits. Este circuito recibe tres entradas (A, B y Cin) y genera dos salidas:
 la suma (S) y el acarreo de salida (Cout).La funcionalidad del full adder se define a partir de su tabla de verdad, que detalla las salidas
 para todas las combinaciones posibles de las entradas.
-https://github.com/Jsuare/Taller-de-diseno-digital/blob/a01721797d882ebf84e55ed57a9dd98f21f2da69/Laboratorio1/Imagenes%20para%20el%20planteamiento/pro4fo1.png
+(https://github.com/Jsuare/Taller-de-diseno-digital/blob/a01721797d882ebf84e55ed57a9dd98f21f2da69/Laboratorio1/Imagenes%20para%20el%20planteamiento/pro4fo1.png)
 
 
