@@ -12,6 +12,7 @@
  5. Realice una validación de su diseño en la tarjeta con FPGA que se utilizará a lo largo del
  curso.
 # Objetivo 
+Implementar y validar un decodificador de 7 segmentos para mostrar valores hexadecimales a partir de 4 bits, con selección de entre cuatro grupos de switches usando botones en la placa Nexys 4.
 
 # Planteamiento de la solución
 Diseñar un decodificador 4→7 para display de 7 segmentos que muestre valores hexadecimales (0..F). Donde por medio de los 16 interruptores del la tarjeta Nexy 4 organizarmos en 4 grupos de 4 (cada grupo = un nibble) y, usando 2 botones, seleccionar cuál de las 4 entradas mostrar en el display mediante multiplexado.
