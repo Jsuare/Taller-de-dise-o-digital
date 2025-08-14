@@ -22,7 +22,8 @@ C<sub>out</sub> = BC<sub>in</sub> + AC<sub>in</sub> + AB
 ```math
 Suma = A ⊕ B ⊕ C<sub>in</sub>
 ```
-El modelado estructural del 1-bit full adder:
+## El modelado estructural del 1-bit full adder: 
+El diseño final del circuito se puede representar a través de un diagrama estructural, que muestra la interconexión de las compuertas lógicas.
 
 ![image](https://github.com/Jsuare/Taller-de-diseno-digital/blob/d2aadbd094e578079cb43d001a9c68b67ab62ae5/Laboratorio1/Imagenes%20para%20el%20planteamiento/Imagen6.png)
 
