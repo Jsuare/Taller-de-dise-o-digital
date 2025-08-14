@@ -1,0 +1,48 @@
+ # 3.5. Ejercicio5. Unidad aritmética lógica (ALU)
+ En este ejercicio deberá diseñar una ALU parametrizable de n bits, como se muestra en la Figura2.
+ Dicha unidad deberá tomardos números de n bits como entrada, así como un bus de control,
+ denominado ALU Control, que debe permitir seleccionar cuál de las operaciones aplicar. Debe respetar los nombre sindicados en la figura en la interfaz de sumódulo. Las diferentes operaciones que debe realizar la ALU(incluyendo sucódigo de operación en hexadecimal)son:
+ 0h-and,
+ 1h-or,
+ 2h-not(sobreunoperando),
+ 3h-suma(encomplementoados),
+ 4h-resta(encomplementoados),
+ 5h- incrementarenunoeloperando,
+ 6h-decrementarenunoeloperando,
+ 7h-xor,
+ 8h-corrimientoalaizquierdadeloperandoA,
+ 9h-corrimientoaladerechadeloperandoA.
+ ah-corrimientoaritm´eticoalaizquierda,
+ bh-máximoentreoperandos→max(A,B)y
+ ch-mínimoentreoperandos→min(A,B).
+
+ La bandera de entrada ALUF lag Inrepresenta el acarreo de entrada para la suma y resta, o el
+ bit de entrada en los corrimientos hacia la izquierda o derecha. Su funciónes permitir conectar
+ 2 ALU paraproveer el doble del número de bits en estas operaciones. En las operaciones de
+ negación, incremento y decremento, esta bandera selecciona cuál de los operandos utilizar (0
+ debe seleccionar al operando A y 1 al operando B). En el resto de operaciones lógicas, esta señal
+ es ignorada.
+ Para las operaciones de corrimiento a la derecha o la izquierda, el operando adesplazares siempre
+ dado por A y cuántos bits a desplazares siempre dado por B.La bandera ALUFlagIn indica con
+ qué valor deben rellenarse los nuevos bits introducidos, y la bandera desalida C indica cual fue
+ el “último” bit que salió de la ventana representada.
+ ## Por ejemplo:
+ Para una ALU de 8 bit, si A=110101102, y B=000000112, ALUFlagIn=1,
+ entonces,en un desplazamiento a la izquierda el resultado es Y=10110111, con C=0, mientras
+ que para un desplazamiento a la derecha el resultado es Y=11111010 con C=1.
+ Adicionalmente la ALU deberá generar una bandera de resultado Cero(Z). Dicha bandera es uno
+ si el resultado es cero independientemente de la operación lógica o aritmética seleccionada.
+ Con base en la descripciónanterior:
+ 1. Diseñe la ALU con un modelo utilizando SystemVerilog. Parta de los circuitos básicos (sumadores, restadores, decorrimiento,etc.)que con sidere necesarios. Muestre los diagramas debloques, tablas de verdad y circuitos decada módulo en el diseño.
+ 
+2. Realice al menos un testbench de auto-chequeo, usando SystemVerilog, en el que se muestre
+ de manera simple el funcionamiento completo de la ALU en 4 bits.
+
+ ## Plantamiento del problema a solucionar
+ La idea es diseñar una ALU parametrizable de n bits que reciba A, B, un bus de control ALUControl (4 bits, códigos 0h–Ch) y una bandera ALUFlagIn. 
+ Debe producir el resultado Y[n-1:0] de acuerdo a la parametrización establecida en el inicio y las banderas C de acarreo y Z resultado cero. La ALU debe implementar 13 operaciones: AND, OR, NOT (unario), SUMA, RESTA, INC, DEC, XOR, SHIFT-L, SHIFT-R, SHIFT-ARITH-L, MAX, MIN. Por lo cuál debemos de tener presente que los multiplexores deben de poder trabajar con esa cantidad de operaciones. 
+
+ # Tabla de funcionamiento de las operaciones de la ALU.
+ Como estamos trabajando con 13 operaciones se emplea el hexadecimal para estos valores y facilitar la implementación.
+ Código (hex)
+
