@@ -31,6 +31,8 @@ Entonces tenemos 4 grupos de 4 interruptores con 4 ledes cada uno, cada grupo se
 De esto con cada grupo establecido teniendo en jeraquía principal el boton, seguido por el interruptor y esto reflejado en el boton. 
 
 ### Diagrama de solución del problema.
+![Diagrama del Bloque 1](Imagenes%para%el%planteamiento/diagrama.png)
+
 
 ### Tablas de la verdad para cada caso 
 Podemos expresar la solución por medio de la lógica de compuertas lógicas para determinar como se puede comportar los leds. Así también establecer las tablas de verdad para cada caso. 
