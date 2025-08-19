@@ -28,8 +28,6 @@ Bus de datos:[WIDTH-1:0]
 | 10           | D2 [bus width]    |
 | 11           | D3 [bus width]    |
 
-# Diagrama de bloques para el funcionamiento.
-
 # Aplicación el la tarjeta FPGA Nexy 4
 Según los componentes perifericos que tiene la tarjeta podemos emplear en ella la funciones para verificar el funcionamiento del multiplexor correctamente. 
 Tenemos:
