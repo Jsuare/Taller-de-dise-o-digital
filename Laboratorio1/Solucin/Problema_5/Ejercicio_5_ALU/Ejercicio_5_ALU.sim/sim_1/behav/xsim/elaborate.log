@@ -1,0 +1,47 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:30]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:33]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:36]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:40]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:42]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:46]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:49]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:52]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:54]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:57]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:59]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:63]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:66]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:69]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:73]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv:76]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 30, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 33, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 36, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 40, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 42, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 46, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 49, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 52, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 54, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 57, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 59, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 63, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 66, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 69, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 73, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 76, File C:/Users/chisc/Downloads/Taller-de-diseno-digital/Laboratorio1/Solucin/Problema_5/Ejercicio_5_ALU/Ejercicio_5_ALU.srcs/sim_1/new/tb_alu.sv
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_tb_behav
