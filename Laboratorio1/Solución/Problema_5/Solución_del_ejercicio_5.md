@@ -96,7 +96,7 @@ Entradas: A, B, Cin → Salidas: S, Cout
 # Solución del problema. 
 
 ## Diseño del circuito Aly
-![ALU](alu.jpeg)
+ ![Diagrama del Bloque 1](Imagenes%20de%20la%20solucion/alu.jpeg)
 
 Como podemos ver esta ALU, realiza los desplazamientos, como tanbién recibe las señales de A y B para determianr por medio de comprueabas lógicas realiza los calculos, todo esto lo recibe la mux que designa las salidas y las banderas de carry o de overflow. 
 ## Codigo en vivado
