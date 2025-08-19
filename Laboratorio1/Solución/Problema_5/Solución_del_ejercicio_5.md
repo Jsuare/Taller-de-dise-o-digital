@@ -41,8 +41,8 @@
  ## Plantamiento del problema a solucionar
  La idea es diseñar una ALU parametrizable de n bits que reciba A, B, un bus de control ALUControl (4 bits, códigos 0h–Ch) y una bandera ALUFlagIn. 
  Debe producir el resultado Y[n-1:0] de acuerdo a la parametrización establecida en el inicio y las banderas C de acarreo y Z resultado cero. La ALU debe implementar 13 operaciones: AND, OR, NOT (unario), SUMA, RESTA, INC, DEC, XOR, SHIFT-L, SHIFT-R, SHIFT-ARITH-L, MAX, MIN. Por lo cuál debemos de tener presente que los multiplexores deben de poder trabajar con esa cantidad de operaciones. 
-
- ![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/alu.png)
+ 
+ ![Diagrama del Bloque 1](Imagenes%20de%20la%20solucion/alu.png)
 
  ### Tabla de funcionamiento de las operaciones de la ALU.
  Como estamos trabajando con 13 operaciones se emplea el hexadecimal para estos valores y facilitar la implementación.
@@ -103,41 +103,6 @@ Como podemos ver esta ALU, realiza los desplazamientos, como tanbién recibe las
 Ahora sabiendo como se va a trabajar realizamos una estructura en vivado por medio del lenguaje de systemverilog. [Codigo ALU](ALU.sv).
 Como se puede ver el codigo tiene tres parte la función del desplazamiento de derecha o izquierda, luego se pasa a las funciones de operaciones y por ultimo las banderas de salida para determianr carreos y control. 
 
-## Prueba por medio de la simulación de la ALLU.
-Trabajaremos con el siguiente test bench, para realizar las pruebas de la ALU.
-[Testbench ALU](ALU_tb.sv).
-
-# Prueba 1. AND
-Se realizó dos pruebas con dos numeros diferentes, 12 and 7 es 3 mientras que 15 and 1 es 1. Por lo que en elcaso de un AND la ALU funciona correctamente.
-![Prueba AND](prueba1.png)
-# Prueba 2. OR
-Se realizó una prueba para comprobar la compuerta OR, donde a OR 6 da e. Para facilitar se trabaja con numero hexadecimales ya que recordemos que la ALU es parametrizable. 
-![Prueba OR](prueba2.png)
-# Prueba 3. suma complemento a 2
-En este caso no esta mal la suma ya que su valor final corresponde a su complemento a 2, por lo cual funciona el intercambio de valor.
-![Prueba complemento a 2 suma](prueba3.png)
-# Prueba 4. suma +1
-Aquí si es una suma del valor A +1 como se muestra en la imagen.
-![Prueba suma+1](prueba4.png)
-# Prueba 5. resta -1
-Resta de uno en el valor que incresa en el intervalo A
-![Prueba menos uno](prueba5.png)
-# Prueba 6. NOT
-Calculamos una not entre los valores de A y B vemos que la compuerta funciona como se muestra en la siguiente imagen.
-![Prueba NOT](prueba6.png)
-# Prueba 7. resta complemento a 2
-Misma funcion de complemento a 2 pero en este caso se resta.
-![Prueba -complemento a 2](prueba7.png)
-# Prueba 8. XOR
-Si realizamos el calculo de una XOR entre al A=b y B=7, nos da en resultado hexadeciaml de c.
-![Prueba XOR](prueba8.png)
-# Prueba 9. Derecha o izquierda
-Aquí realizamos un ejemplo propio con los valores de A y B que ya veniamos trabajando, como vemos según el valor de A se mueve la cantida de bits como vemos pasamos a un valor 4'b1011 a un valor 4'b0110, como se muestra en el primer franco de la imagen para el siguiente caso que va a la derecha pasa de 4'b1011 a 4'b0101. De manera que cumplimos con lo solicitado en el enunciado. Y lo comprobamos en la imagen. 
-![Prueba desplazamiento del bit](prueba9.png)
-
-## Prueba del desplazamiento del enunciado 
-Como vimos hicimos pruebas por cada una de las operaciones que debe realizar la ALU, pero en el enucniado viene con un ejemplo de como debe de funcionar dicho operador, por lo tanto a continuación se muestra como nuestra ALU prueba esta condiciones y cumple con lo requerido. 
-![Prueba del enuncuiado](pruebaenunciado.png)
 
 ### Concluciones
 Para este problema establecemos como conlcucion que el parametrizar una ALU, delimita su funcionamiento ya que conceremos la entrada de bits, por lo cual en caso de bancos de bits pequeños nos limpia los resultados, por otro lado el tener dos ALU conectados, dublica la cantidad a trabajar de estos bancos, sin generar circuitos más complejos.
