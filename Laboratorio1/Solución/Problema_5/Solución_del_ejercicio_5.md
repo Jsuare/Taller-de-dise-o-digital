@@ -110,7 +110,6 @@ Por ultimo los flancos de bandera son muy importantes para concer como esta taba
 
 ## Prueba total de la ALU.
 En la siguiente imagen se podra ver la ALU, con todos los resultados en un solo testbench para analizar.
-![Test](pruebatotal.png)
 
 # Bibliografía.
 1.David Money Harris y Sarah L. Harris. Digital Design and Computer Architecture, RISC-V Edition. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 2022. ISBN: 978-0-12- 820064-3.
