@@ -30,6 +30,7 @@ Bus de datos:[WIDTH-1:0]
 
 # Solucion del ejercicio
 Acontinuación se preseta el codigo utilizado para determinar el funcionamiento del mux de 4 a 1: 
+[Ver código top.sv](top.sv)
 
 Como podemos ver este ejercicio es más para determinar la logica del funcionamiento del multiplexor y su cmabios, esto se pude representar a través del siguiente testbech:
 
