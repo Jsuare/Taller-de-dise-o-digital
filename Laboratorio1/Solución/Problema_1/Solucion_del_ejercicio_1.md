@@ -30,38 +30,6 @@ Grupo 4 será interruptores de SW12 a SW15
 Entonces tenemos 4 grupos de 4 interruptores con 4 ledes cada uno, cada grupo será controlado por un boton especifico del BTN0 al BTN3, si se presiona un boton este grupo de leds se mantiene apagando sin importar en que posición este los interruptores de este grupo. Mientras los otros sets de ledes seguiran su comportamiento normal regido por sus interruptores y sus botones cabeceros no activos. 
 De esto con cada grupo establecido teniendo en jeraquía principal el boton, seguido por el interruptor y esto reflejado en el boton. 
 
-### Diagrama de solución del problema.
-## Diagrama del Bloque 1
-![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20112808.png)
-## Diagrama del Bloque 2
-![Diagrama del Bloque 2](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20112906.png)
-## Diagrama del Bloque 3
-![Diagrama del Bloque 3](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20112944.png)
-## Diagrama del Bloque 4
-![Diagrama del Bloque 4](Imagenes%20para%20el%20planteamiento/Captura%20de%20pantalla%202025-08-13%20113015.png)
-
-
-
-### Tablas de la verdad para cada caso 
-Podemos expresar la solución por medio de la lógica de compuertas lógicas para determinar como se puede comportar los leds. Así también establecer las tablas de verdad para cada caso. 
-Cada LED puede expresarse con la fórmula lógica:
-                                    𝐿𝐸𝐷 (Número) =(interrupotor del led)⋅~(boton del grupo).
-                                
-Es decir: si el botón no está presionado, el LED refleja el interruptor; si el botón está presionado, el LED se apaga, por medio de la implementación de compuertas lógicas como lo son la AND y NOT.
-
-Tabla de la verdad para el led nuemro 1. 
-
-| Interruptor | Botón | LED |
-|-------------|-------|-----|
-| 0           | 0     | 0   |
-| 1           | 0     | 1   |
-| 0           | 1     | 0   |
-| 1           | 1     | 0   |
-
-
-Está misma lógica se aplica para las demás ledes de los otros 3 grupos del ejercicio. 
-
-
 # Solución del ejercicio.
 
 Se establecio el siguiente codigo para determinar el funcionamiento de los ledes estos reflejaran el valor dado por la combinación de switch, pero tendrá por jeraquía que si el boton de cabecera se activa este grupo de ledes permanecera apagados por el periodo de tiempo que el botón este precionado. El codigo top para el ejercicio es el siguiente:
