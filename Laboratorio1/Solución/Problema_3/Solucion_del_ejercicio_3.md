@@ -49,6 +49,11 @@ Para el 7 segmentos se debe de tener una configuración de cadaled que comforma 
 
 De está forma en cada display se mostrará la combinacion de bits por así decirlo de los switch en 4 display de manera que se muestre los valores de cero a quince en el 7 segmentos.
 El codigo utilizado es el siguiente: 
+[Ver código 7_segmentos_top.sv](7_segmentos_top.sv)
+
 
 Y como los demás casos se utilizará la simulación para ver el como se comporta cada caso del 7 segmentos antes de implementarlo en la tarjeta FPGA.
 El codigo del tb es el siguiente: 
+[Ver código 7_segmentos_tb_top.sv](7_segmentos_tb_top.sv)
+
+La simulación del ejercicio se divide
