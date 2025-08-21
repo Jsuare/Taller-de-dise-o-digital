@@ -39,7 +39,7 @@ Como se puede observar se utilizo el medio del las condicionales if para determi
 
 ## Realización del testbech.
 Al igual que todos los problemas se establecio un tb para verificar su funcionamiento, acontinuación se detalla la función de este:
-[Ver código top.sv](tb_top.sv)
+[Ver código tb_top.sv](tb_top.sv)
 
 ![Prueba 1](../Imagenes%20para%20la%20solucion/prueba1.png)
 
