@@ -110,6 +110,10 @@ Por ultimo los flancos de bandera son muy importantes para concer como esta taba
 
 ## Prueba total de la ALU.
 En la siguiente imagen se podra ver la ALU, con todos los resultados en un solo testbench para analizar.
+El testbech de la ALU en general es el siguiente:
+[Codigo tb_ALU](tb_ALU.sv)
 
-# Bibliografía.
-1.David Money Harris y Sarah L. Harris. Digital Design and Computer Architecture, RISC-V Edition. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 2022. ISBN: 978-0-12- 820064-3.
+El codigo de la ALU de ejemplo es el siguiente:
+[Codigo ALU](tb_ALU_ejemplo.sv)
+
+En las siguientes imagenes se puede ver el como funciona la ALU:
