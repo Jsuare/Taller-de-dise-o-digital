@@ -30,15 +30,17 @@ Bus de datos:[WIDTH-1:0]
 
 # Solucion del ejercicio
 Acontinuación se preseta el codigo utilizado para determinar el funcionamiento del mux de 4 a 1: 
-[Ver código top.sv](top.sv)
+[Ver código top.sv](4to1mux_using_2to1mux_design.sv)
 
 Como podemos ver este ejercicio es más para determinar la logica del funcionamiento del multiplexor y su cmabios, esto se pude representar a través del siguiente testbech:
 
 Y a continuación el resultado de la simulación:
+[Ver código top.sv](4to1_mux_testbench.sv)
 
 # Aplicación el la tarjeta FPGA Nexy 4
 Según los componentes perifericos que tiene la tarjeta podemos emplear en ella la funciones para verificar el funcionamiento del multiplexor correctamente. 
 Tenemos:
+
  1. Interruptores para establecer el valor que se debe transmitir en la salida de acuerdo a cada entrada.
  2. Leds para visulizar la salida 
  3. Botones para seleccionar que debe reflejar el multiplexor. 
