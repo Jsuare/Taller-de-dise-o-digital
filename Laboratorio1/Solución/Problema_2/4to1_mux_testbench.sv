@@ -1,46 +1,43 @@
-module mux_4to1_tb;
-    reg A,B,C,D;       
-    reg S1,S2;          
-    wire OUT;              
-    mux_4to1 uut (
-      .A(A),
-      .B(B),
-      .C(C),
-      .D(D),
-      .S1(S1),
-      .S2(S2),
-      .OUT(OUT)
+`timescale 1ns / 1ps
+
+
+module sim_4x1mux;
+
+    logic [3:0] A, B, C, D;
+    logic [1:0] select;
+    logic [3:0] mux_out;
+    
+    // Instantiate device under test
+    mux4x1 #(.W(4)) DUT (
+        .A(A), 
+        .B(B), 
+        .C(C), 
+        .D(D), 
+        .select(select), 
+        .mux_out(mux_out)
     );
-  
-     initial begin
-       $dumpfile("mux_waveform.vcd");
-       $dumpvars(1,mux_4to1_tb);
-       $display("Time\tS1 S2\tD C B A\tOUT");
 
-        // primer input set: A=0, B=0, C=0, D=0
-        A = 0; B = 0; C = 0; D = 0;
+    initial begin
+        // Stimulus
+        A = 4'b0000;    // 0
+        B = 4'b0101;    // 5
+        C = 4'b1010;    // 10
+        D = 4'b1111;    // 15
 
-       S1 = 0; S2 = 0; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 0; S2 = 1; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 1; S2 = 0; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 1; S2 = 1; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
+        select = 2'b00; #2;
+        select = 2'b01; #2;
+        select = 2'b10; #2;
+        select = 2'b11; #2;
+        select = 2'b00; #2;
 
-        // Second input set: A=1, B=1, C=1, D=1
-        A = 1; B = 1; C = 1; D = 1;
-
-       S1 = 0; S2 = 0; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 0; S2 = 1; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 1; S2 = 0; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 1; S2 = 1; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-
-       // Third input set: A=0, B=1, C=0, D=1
-        A = 0; B = 1; C = 0; D = 1;
-
-       S1 = 0; S2 = 0; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 0; S2 = 1; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 1; S2 = 0; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-       S1 = 1; S2 = 1; #5; $display("%0t\t%b  %b\t%b %b %b %b\t%b", $time, S1, S2, D, C, B, A, OUT);
-
-        $finish;
+        $finish;   
     end
+
+    // Monitor values
+    initial begin
+        $display("Time\tSel\tA\tB\tC\tD\tOut");
+        $monitor("%0t\t%b\t%b\t%b\t%b\t%b\t%b", 
+                  $time, select, A, B, C, D, mux_out);
+    end
+    
 endmodule
