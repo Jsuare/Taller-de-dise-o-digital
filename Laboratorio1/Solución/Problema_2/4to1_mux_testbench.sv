@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
 
-
 module sim_4x1mux;
 
     logic [3:0] A, B, C, D;
