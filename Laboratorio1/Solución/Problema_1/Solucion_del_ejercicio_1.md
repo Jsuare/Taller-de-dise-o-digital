@@ -16,7 +16,7 @@ Podemos determinar según la hoja de datos de está que tenemos:
     3. 4 botones enumerados del BTN0 al BTN3
 
 Por lo que podemos establecer 4 grupos de 16 ledes controlados bajo un solo botón para el apagado permanente, mientras que cada uno de los ledes trendrá un variación de acuerdo con los interrutores establecido para cada led. 
-# Requerimiento. 
+## Requerimiento. 
 El módulo es establecera como un receptor donde recibe la señal de 16 interruptores para apagar y encender los ledes correspondientes a este interruptor. De manera que a través de la luz del led podamos verificar el estado de lso interruptores en sus 16 ledes correspondientes.
 Al mismo tiempo se debe de establecer 4 grupos de ledes con sus 4 interruptores de manera que podemos seguir utilizando la nomeclatura del la hoja de datos de la tarjeta. 
 
@@ -60,3 +60,17 @@ Tabla de la verdad para el led nuemro 1.
 
 
 Está misma lógica se aplica para las demás ledes de los otros 3 grupos del ejercicio. 
+
+
+# Solución del ejercicio.
+
+Se establecio el siguiente codigo para determinar el funcionamiento de los ledes estos reflejaran el valor dado por la combinación de switch, pero tendrá por jeraquía que si el boton de cabecera se activa este grupo de ledes permanecera apagados por el periodo de tiempo que el botón este precionado. El codigo top para el ejercicio es el siguiente:
+Como se puede observar se utilizo el medio del las condicionales if para determinar si se debe de apagar o no, mientras que se establece como definido la codificación de los switch para representarse por los leds.
+
+## Realización del testbech.
+Al igual que todos los problemas se establecio un tb para verificar su funcionamiento, acontinuación se detalla la función de este:
+
+Como vemos en la simulación el boton 0 esta activo por lo que los leds estan apagados completamente, mientras que en los otros tres bloques se ve la representación de los switch, sin importar el orden. 
+
+Está prueba es más vizual por lo que se aplicará en una tarjeta FPGA para logra completar el funcionamiento completo del ejercicio. 
+Acontinuación se muestra un video de como se realizó la prueba:
