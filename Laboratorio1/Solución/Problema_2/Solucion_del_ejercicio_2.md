@@ -40,6 +40,7 @@ Y a continuación el resultado de la simulación:
 # Aplicación el la tarjeta FPGA Nexy 4
 Según los componentes perifericos que tiene la tarjeta podemos emplear en ella la funciones para verificar el funcionamiento del multiplexor correctamente. 
 Tenemos:
+![Simulación Problema 2](../Problema_2/Simulación.png)
 
  1. Interruptores para establecer el valor que se debe transmitir en la salida de acuerdo a cada entrada.
  2. Leds para visulizar la salida 
