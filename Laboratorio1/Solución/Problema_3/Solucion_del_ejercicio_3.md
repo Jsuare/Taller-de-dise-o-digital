@@ -15,18 +15,7 @@
 Implementar y validar un decodificador de 7 segmentos para mostrar valores hexadecimales a partir de 4 bits, con selección de entre cuatro grupos de switches usando botones en la placa Nexys 4.
 
 # Planteamiento de la solución
-Diseñar un decodificador 4→7 para display de 7 segmentos que muestre valores hexadecimales (0..F). Donde por medio de los 16 interruptores del la tarjeta Nexy 4 organizarmos en 4 grupos de 4 (cada grupo = un nibble) y, usando 2 botones, seleccionar cuál de las 4 entradas mostrar en el display mediante multiplexado.
-![Diagrama del Bloque 1](Imagenes%20para%20el%20planteamiento/3.png)
-## Entradas:
-Los interruptores de la NExy 4 que esta bajo el nombre sw[15:0] 
-Entonces son 16 interruptores organizados en 4 grupos: sw[3:0], sw[7:4], sw[11:8], sw[15:12])
-También contamos con los botones del la tarjeta btn[1:0] de manera que son dos botones.
-
-## Salidas:
-La tarjeta trae incluido como periferico un seg[6:0] donde se debe de mostrar por medio de la uluminción de los leds las variables de salida.
-Tmabién se debe de tomar en cuenta el an[3:0] (anodos/cátodos de los 4 dígitos si tu display físico), estos se ilumina si es activa la salidaa.
-
-# Tabla de verdad para el 7 segmento. 
+## Tabla de verdad para el 7 segmento. 
 
 | Entrada (Hex) | Entrada binaria | Segmentos `{a,b,c,d,e,f,g}` | 
 | ------------- | --------------- | --------------------------- | 
@@ -47,3 +36,19 @@ Tmabién se debe de tomar en cuenta el an[3:0] (anodos/cátodos de los 4 dígito
 | E             | 1110            | 1001111                     | 
 | F             | 1111            | 1000111                     | 
 
+# Solucion del ejercicio.
+Para el 7 segmentos se debe de tener una configuración de cadaled que comforma el dispositivo de manera que al tener 4 bits representados por los switch, estos se deben de representar correctamente en el display. También se debde de tener en cuenta la jerarquía de los botones para determinar cual de lo cuatro display se esta utilizando, a partir de la configuración del multiplexor del ejercicio 2 podemos determinar la siguiente tabla:
+## Tabla del muxtiplexor para el 7 segmento. 
+
+| Bloque de switch| combinacón del mux | Display|
+| --------------- | ------------------ | -------|
+| 0               |     00             |    0   |
+| 1               |     01             |    1   |
+| 2               |     10             |    2   |
+| 3               |     11             |    3   |
+
+De está forma en cada display se mostrará la combinacion de bits por así decirlo de los switch en 4 display de manera que se muestre los valores de cero a quince en el 7 segmentos.
+El codigo utilizado es el siguiente: 
+
+Y como los demás casos se utilizará la simulación para ver el como se comporta cada caso del 7 segmentos antes de implementarlo en la tarjeta FPGA.
+El codigo del tb es el siguiente: 
