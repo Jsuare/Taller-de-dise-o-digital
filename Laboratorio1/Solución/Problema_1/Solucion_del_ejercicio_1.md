@@ -45,3 +45,4 @@ Como vemos en la simulación el boton 0 esta activo por lo que los leds estan ap
 
 Está prueba es más vizual por lo que se aplicará en una tarjeta FPGA para logra completar el funcionamiento completo del ejercicio. 
 Acontinuación se muestra un video de como se realizó la prueba:
+[Ver video de pruebas finales](../Imagenes%20para%20la%20solucion/Pruebasfinales.mp4)
