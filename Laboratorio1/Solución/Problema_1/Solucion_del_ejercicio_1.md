@@ -37,9 +37,11 @@ Como se puede observar se utilizo el medio del las condicionales if para determi
 
 ## Realización del testbech.
 Al igual que todos los problemas se establecio un tb para verificar su funcionamiento, acontinuación se detalla la función de este:
-![Simulación completa](../Imagenes%20para%20la%20solucion/Simulacióncompleta.png)
+![Prueba 1](../Imagenes%20para%20la%20solucion/prueba1.png)
 
 Como vemos en la simulación el boton 0 esta activo por lo que los leds estan apagados completamente, mientras que en los otros tres bloques se ve la representación de los switch, sin importar el orden. 
+# Prueba completa.
+![Simulación completa](../Imagenes%20para%20la%20solucion/Simulacióncompleta.png)
 
 Está prueba es más vizual por lo que se aplicará en una tarjeta FPGA para logra completar el funcionamiento completo del ejercicio. 
 Acontinuación se muestra un video de como se realizó la prueba:
