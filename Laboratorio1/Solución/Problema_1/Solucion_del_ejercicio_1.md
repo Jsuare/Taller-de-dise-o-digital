@@ -32,7 +32,7 @@ De esto con cada grupo establecido teniendo en jeraquía principal el boton, seg
 
 ### Diagrama de solución del problema.
 ## Diagrama del Bloque 1
-![Diagrama del Bloque 1](Imagenes_para_la_solucion/Captura_2025-08-13_112808.png)
+![Diagrama del Bloque 1](Imagenes%20para%20la%20solucion/Captura%20de%20pantalla%202025-08-13%20112808.png)
 
 
 
