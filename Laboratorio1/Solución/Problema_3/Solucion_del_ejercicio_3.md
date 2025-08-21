@@ -56,4 +56,7 @@ Y como los demás casos se utilizará la simulación para ver el como se comport
 El codigo del tb es el siguiente: 
 [Ver código 7_segmentos_tb_top.sv](7_segmentos_tb_top.sv)
 
-La simulación del ejercicio se divide
+La simulación del ejercicio se divide en varios espacio pero aqui podemos ver como funciona y su correcta implementación.
+![Simulación ejercicio 3](../Imagenes%20para%20la%20solucion/simulacionejercico3.png)
+
+Como en el ejecicio 1, este ejercicio debe emplearse a través de una tarjeta FPGA, por lo que en el siguiente video se puede ver la implementación. 
