@@ -28,6 +28,13 @@ Bus de datos:[WIDTH-1:0]
 | 10           | D2 [bus width]    |
 | 11           | D3 [bus width]    |
 
+# Solucion del ejercicio
+Acontinuación se preseta el codigo utilizado para determinar el funcionamiento del mux de 4 a 1: 
+
+Como podemos ver este ejercicio es más para determinar la logica del funcionamiento del multiplexor y su cmabios, esto se pude representar a través del siguiente testbech:
+
+Y a continuación el resultado de la simulación:
+
 # Aplicación el la tarjeta FPGA Nexy 4
 Según los componentes perifericos que tiene la tarjeta podemos emplear en ella la funciones para verificar el funcionamiento del multiplexor correctamente. 
 Tenemos:
