@@ -116,6 +116,8 @@ El testbech de la ALU en general es el siguiente:
 El codigo de la ALU de ejemplo es el siguiente:
 [Codigo ALU](tb_ALU_ejemplo.sv)
 
+En las siguientes imagenes se puede ver el como funciona la ALU:
+
 ## Prueba de la ALU completa.
  ![Diagrama del Bloque 1](Imagenes%20de%20la%20solucion/alucompleta.png)
 
@@ -132,4 +134,4 @@ El codigo de la ALU de ejemplo es el siguiente:
 
 ## Prueba Ejemplo
 ![Diagrama del Bloque 1](Imagenes%20de%20la%20solucion/pruebaejemplo.png)
-En las siguientes imagenes se puede ver el como funciona la ALU:
+
